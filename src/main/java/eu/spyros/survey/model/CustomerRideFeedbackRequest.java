@@ -3,8 +3,8 @@ package eu.spyros.survey.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ride_feedback_request")
-public class RideFeedbackRequest implements Identifiable {
+@Table(name = "customer_ride_feedback_request")
+public class CustomerRideFeedbackRequest implements Identifiable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,15 +20,15 @@ public class RideFeedbackRequest implements Identifiable {
 	@JoinColumn(name = "ride_survey_id", referencedColumnName = "id")
 	private RideSurvey rideSurvey;
 	@OneToOne(mappedBy = "rideFeedbackRequest")
-	private CustomerRideFeedback customerRideFeedback;
+	private CustomerRideFeedbackResponse customerRideFeedback;
 
 
-	public RideFeedbackRequest(Ride ride, RideSurvey rideSurvey) {
+	public CustomerRideFeedbackRequest(Ride ride, RideSurvey rideSurvey) {
 		this.ride = ride;
 		this.rideSurvey = rideSurvey;
 	}
 
-	protected RideFeedbackRequest() {
+	protected CustomerRideFeedbackRequest() {
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class RideFeedbackRequest implements Identifiable {
 	 *
 	 * @return customerRideFeedback
 	 **/
-	public CustomerRideFeedback getCustomerRideFeedback() {
+	public CustomerRideFeedbackResponse getCustomerRideFeedback() {
 		return customerRideFeedback;
 	}
 
@@ -99,7 +99,7 @@ public class RideFeedbackRequest implements Identifiable {
 	 *
 	 * @param customerRideFeedback
 	 **/
-	public void setCustomerRideFeedback(CustomerRideFeedback customerRideFeedback) {
+	public void setCustomerRideFeedback(CustomerRideFeedbackResponse customerRideFeedback) {
 		this.customerRideFeedback = customerRideFeedback;
 	}
 }
