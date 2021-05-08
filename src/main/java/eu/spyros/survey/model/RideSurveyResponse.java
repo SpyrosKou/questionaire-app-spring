@@ -19,6 +19,10 @@ public class RideSurveyResponse implements Identifiable {
 	@OneToMany(mappedBy = "rideSurveyResponse")
 	private List<ChoiceAnswer> choiceAnswers;
 
+	@OneToOne
+	@JoinColumn(name = "ride_feedback_request_id", referencedColumnName = "id")
+	private CustomerRideFeedbackResponse customerRideFeedbackResponse;
+
 	protected RideSurveyResponse() {
 	}
 
