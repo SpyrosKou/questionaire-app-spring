@@ -2,6 +2,7 @@ package eu.spyros.survey.model;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 /**
  * An answer to a {@link FreeTextQuestion} of a specific {@link RideSurveyResponse} for particular {@link RideSurvey}
@@ -144,5 +145,16 @@ public class FreeTextAnswer implements Identifiable {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getAnswer(), getOther(), getRideSurveyResponse(), getFreeTextQuestion());
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", FreeTextAnswer.class.getSimpleName() + "[", "]")
+                .add("id=" + id)
+                .add("answer='" + answer + "'")
+                .add("other='" + other + "'")
+                .add("rideSurveyResponse=" + Identifiable.toString(rideSurveyResponse))
+                .add("freeTextQuestion=" + Identifiable.toString(freeTextQuestion))
+                .toString();
     }
 }

@@ -21,7 +21,7 @@ public class AccessingDataRestApplication {
             final CustomerRepository customerRepository,
             final RideRepository rideRepository,
             final RideSurveyRepository rideSurveyRepository,
-            final RideFeedbackRequestRepository rideFeedbackRequestRepository) {
+            final CustomerRideFeedbackRequestRepository rideFeedbackRequestRepository) {
         return (args) -> {
             // save a few customers
             final Customer jackBauer = customerRepository.save(new Customer("Jack", "Bauer"));

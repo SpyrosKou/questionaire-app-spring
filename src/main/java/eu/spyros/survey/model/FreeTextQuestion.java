@@ -1,6 +1,8 @@
 package eu.spyros.survey.model;
 
 import javax.persistence.*;
+import java.util.Objects;
+import java.util.StringJoiner;
 
 /**
  * Created at 2021-05-08
@@ -83,5 +85,27 @@ public class FreeTextQuestion implements Identifiable {
      **/
     public void setRideSurvey(RideSurvey rideSurvey) {
         this.rideSurvey = rideSurvey;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof FreeTextQuestion)) return false;
+        FreeTextQuestion that = (FreeTextQuestion) o;
+        return Objects.equals(getId(), that.getId()) && Objects.equals(getQuestion(), that.getQuestion()) && Objects.equals(getRideSurvey(), that.getRideSurvey());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getQuestion(), getRideSurvey());
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", FreeTextQuestion.class.getSimpleName() + "[", "]")
+                .add("id=" + id)
+                .add("question='" + question + "'")
+                .add("rideSurvey=" + Identifiable.toString(rideSurvey))
+                .toString();
     }
 }

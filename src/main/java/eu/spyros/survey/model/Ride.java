@@ -120,8 +120,8 @@ public class Ride implements Identifiable {
 	public String toString() {
 		return new StringJoiner(", ", Ride.class.getSimpleName() + "[", "]")
 				.add("id=" + id)
-				.add("customer=" + customer)
-				.add("rideFeedbackRequest=" + customerRideFeedbackRequest)
+				.add("customer=" + Identifiable.toString(customer))
+				.add("customerRideFeedbackRequest=" + Identifiable.toString(customerRideFeedbackRequest))
 				.toString();
 	}
 }
