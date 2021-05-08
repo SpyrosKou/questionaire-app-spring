@@ -1,18 +1,41 @@
-package eu.spyros.questionnaire.domain;
+package eu.spyros.questionnaire.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name="customer")
+@Table(name = "customer")
 public class Customer {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String firstName;
 	private String lastName;
+	@OneToMany(mappedBy = "customer")
+	private List<Ride> rides;
 
-	protected Customer() {}
+	/**
+	 * Getter for rides
+	 *
+	 * @return rides
+	 **/
+	public List<Ride> getRides() {
+		return rides;
+	}
+
+	/**
+	 * Setter for rides
+	 *
+	 * @param rides
+	 **/
+	public void setRides(List<Ride> rides) {
+		this.rides = rides;
+	}
+
+
+	protected Customer() {
+	}
 
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;

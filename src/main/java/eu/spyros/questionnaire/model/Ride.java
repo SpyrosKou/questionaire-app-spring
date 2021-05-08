@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.domain;
+package eu.spyros.questionnaire.model;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -8,27 +8,28 @@ import java.util.StringJoiner;
  * Drafted model of a ride. Assumes only on client per ride, no ridesharing.
  */
 @Entity
-@Table(name="ride")
+@Table(name = "ride")
 public class Ride {
 
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
 	private Long id;
 
-	@OneToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="customer_id")
+
+	@ManyToOne
+	@JoinColumn(name = "customer_id", referencedColumnName = "id")
 	private Customer customer;
 
-	@OneToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="ride_feedback_request_id")
+	@OneToOne(mappedBy = "ride")
 	private RideFeedbackRequest rideFeedbackRequest;
 
-    /**
+	/**
 	 *
 	 */
-	protected Ride() {}
+	protected Ride() {
+	}
 
 	/**
 	 *

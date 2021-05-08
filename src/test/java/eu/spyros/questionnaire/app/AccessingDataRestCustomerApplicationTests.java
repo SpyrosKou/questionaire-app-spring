@@ -16,7 +16,7 @@
 
 package eu.spyros.questionnaire.app;
 
-import eu.spyros.questionnaire.domain.CustomerRepository;
+import eu.spyros.questionnaire.model.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

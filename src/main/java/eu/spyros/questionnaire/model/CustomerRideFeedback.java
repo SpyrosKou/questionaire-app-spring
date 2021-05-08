@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.domain;
+package eu.spyros.questionnaire.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -14,6 +14,10 @@ public class CustomerRideFeedback {
 
     @Column(name = "timestamp", columnDefinition = "TIMESTAMP")
     private LocalDateTime timestamp;
+
+    @OneToOne
+    @JoinColumn(name = "ride_feedback_request_id", referencedColumnName = "id")
+    private RideFeedbackRequest rideFeedbackRequest;
 
     protected CustomerRideFeedback() {
     }
