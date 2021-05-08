@@ -35,6 +35,9 @@ public class ChoiceAnswer implements Identifiable {
             inverseJoinColumns =
             @JoinColumn(name = "choice_question_option_id", referencedColumnName = "ID")
     )
+    /**
+     *
+     */
     private List<ChoiceQuestionOption> questionOptions;
 
     protected ChoiceAnswer() {

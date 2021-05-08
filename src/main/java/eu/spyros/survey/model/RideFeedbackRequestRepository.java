@@ -9,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  * @author Spyros Koukas
  */
 @RepositoryRestResource(collectionResourceRel = "ride_feedback_requests", path = "ride_feedback_requests")
-public interface RideFeedbackRequestRepository extends JpaRepository<RideFeedbackRequest, Long> {
+public interface RideFeedbackRequestRepository extends JpaRepository<CustomerRideFeedbackRequest, Long> {
 
-    RideFeedbackRequest findById(long id);
+    CustomerRideFeedbackRequest findById(long id);
 }

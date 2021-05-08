@@ -23,7 +23,7 @@ public class Ride implements Identifiable {
 	private Customer customer;
 
 	@OneToOne(mappedBy = "ride")
-	private RideFeedbackRequest rideFeedbackRequest;
+	private CustomerRideFeedbackRequest customerRideFeedbackRequest;
 
 	/**
 	 *
@@ -32,13 +32,12 @@ public class Ride implements Identifiable {
 	}
 
 	/**
-	 *
 	 * @param customer
-	 * @param rideFeedbackRequest
+	 * @param customerRideFeedbackRequest
 	 */
-	public Ride(final Customer customer, final RideFeedbackRequest rideFeedbackRequest){
-		this.customer=customer;
-		this.rideFeedbackRequest=rideFeedbackRequest;
+	public Ride(final Customer customer, final CustomerRideFeedbackRequest customerRideFeedbackRequest) {
+		this.customer = customer;
+		this.customerRideFeedbackRequest = customerRideFeedbackRequest;
 	}
 
 	/**
@@ -90,8 +89,8 @@ public class Ride implements Identifiable {
 	 *
 	 * @return rideFeedbackRequest
 	 **/
-	public RideFeedbackRequest getRideFeedbackRequest() {
-		return rideFeedbackRequest;
+	public CustomerRideFeedbackRequest getCustomerRideFeedbackRequest() {
+		return customerRideFeedbackRequest;
 	}
 
 	/**
@@ -99,8 +98,8 @@ public class Ride implements Identifiable {
 	 *
 	 * @param rideFeedbackRequest
 	 **/
-	public  void setRideFeedbackRequest(final RideFeedbackRequest rideFeedbackRequest) {
-		this.rideFeedbackRequest = rideFeedbackRequest;
+	public void setCustomerRideFeedbackRequest(final CustomerRideFeedbackRequest rideFeedbackRequest) {
+		this.customerRideFeedbackRequest = rideFeedbackRequest;
 	}
 
 	@Override
@@ -108,12 +107,12 @@ public class Ride implements Identifiable {
 		if (this == o) return true;
 		if (!(o instanceof Ride)) return false;
 		Ride ride = (Ride) o;
-		return getId().equals(ride.getId()) && getCustomer().equals(ride.getCustomer()) && Objects.equals(getRideFeedbackRequest(), ride.getRideFeedbackRequest());
+		return getId().equals(ride.getId()) && getCustomer().equals(ride.getCustomer()) && Objects.equals(getCustomerRideFeedbackRequest(), ride.getCustomerRideFeedbackRequest());
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(getId(), getCustomer(), getRideFeedbackRequest());
+		return Objects.hash(getId(), getCustomer(), getCustomerRideFeedbackRequest());
 	}
 
 
@@ -122,7 +121,7 @@ public class Ride implements Identifiable {
 		return new StringJoiner(", ", Ride.class.getSimpleName() + "[", "]")
 				.add("id=" + id)
 				.add("customer=" + customer)
-				.add("rideFeedbackRequest=" + rideFeedbackRequest)
+				.add("rideFeedbackRequest=" + customerRideFeedbackRequest)
 				.toString();
 	}
 }

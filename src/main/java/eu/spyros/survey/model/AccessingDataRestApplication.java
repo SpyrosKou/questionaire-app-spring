@@ -34,7 +34,7 @@ public class AccessingDataRestApplication {
 
             final Ride jacksRide = rideRepository.save(new Ride(jackBauer));
 
-            final RideFeedbackRequest rideFeedbackRequest = rideFeedbackRequestRepository.save(new RideFeedbackRequest(jacksRide, satisfactionSurvey));
+            final CustomerRideFeedbackRequest rideFeedbackRequest = rideFeedbackRequestRepository.save(new CustomerRideFeedbackRequest(jacksRide, satisfactionSurvey));
 
             final FreeTextQuestion freeTextQuestion = new FreeTextQuestion();
 
