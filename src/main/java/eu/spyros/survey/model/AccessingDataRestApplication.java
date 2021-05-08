@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class AccessingDataRestApplication {
     public CommandLineRunner demo(
             final CustomerRepository customerRepository,
             final RideRepository rideRepository,
-            final RideQuestionnaireRepository rideQuestionnaireRepository,
+            final RideSurveyRepository rideSurveyRepository,
             final RideFeedbackRequestRepository rideFeedbackRequestRepository) {
         return (args) -> {
             // save a few customers
@@ -30,11 +30,11 @@ public class AccessingDataRestApplication {
             final Customer davidPalmer = customerRepository.save(new Customer("David", "Palmer"));
             final Customer micheleDessler = customerRepository.save(new Customer("Michelle", "Dessler"));
 
-            final RideQuestionnaire satisfactionQuestionnaire = rideQuestionnaireRepository.save(new RideQuestionnaire());
+            final RideSurvey satisfactionSurvey = rideSurveyRepository.save(new RideSurvey());
 
             final Ride jacksRide = rideRepository.save(new Ride(jackBauer));
 
-            final RideFeedbackRequest rideFeedbackRequest = rideFeedbackRequestRepository.save(new RideFeedbackRequest(jacksRide, satisfactionQuestionnaire));
+            final RideFeedbackRequest rideFeedbackRequest = rideFeedbackRequestRepository.save(new RideFeedbackRequest(jacksRide, satisfactionSurvey));
 
             final FreeTextQuestion freeTextQuestion = new FreeTextQuestion();
 

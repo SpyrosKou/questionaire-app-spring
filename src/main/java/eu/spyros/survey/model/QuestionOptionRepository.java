@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
@@ -9,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  * @author Spyros Koukas
  */
 @RepositoryRestResource(collectionResourceRel = "questions_options", path = "questions_options")
-public interface QuestionOptionRepository extends JpaRepository<QuestionOption, Long> {
+public interface QuestionOptionRepository extends JpaRepository<ChoiceQuestionOption, Long> {
 
-    QuestionOption findById(long id);
+    ChoiceQuestionOption findById(long id);
 }

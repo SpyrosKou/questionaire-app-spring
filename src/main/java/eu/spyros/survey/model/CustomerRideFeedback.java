@@ -1,10 +1,13 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ *
+ */
 @Entity
-public class CustomerRideFeedback {
+public class CustomerRideFeedback implements Identifiable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

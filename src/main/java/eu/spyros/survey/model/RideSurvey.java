@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import javax.persistence.*;
 import java.util.HashMap;
@@ -8,22 +8,22 @@ import java.util.List;
  * Additional features omitted for brevity, an indication of the order of each question.
  */
 @Entity
-public class RideQuestionnaire {
+public class RideSurvey implements Identifiable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@OneToMany(mappedBy = "rideQuestionnaire")
+	@OneToMany(mappedBy = "rideSurvey")
 	private List<FreeTextQuestion> freeTextQuestions;
 
-	@OneToMany(mappedBy = "rideQuestionnaire")
+	@OneToMany(mappedBy = "rideSurvey")
 	private List<ChoiceQuestion> choiceQuestions;
 
-	protected RideQuestionnaire() {
+	protected RideSurvey() {
 	}
 
-	public RideQuestionnaire(List<FreeTextQuestion> freeTextQuestions, List<ChoiceQuestion> choiceQuestions) {
+	public RideSurvey(List<FreeTextQuestion> freeTextQuestions, List<ChoiceQuestion> choiceQuestions) {
 		this.freeTextQuestions = freeTextQuestions;
 		this.choiceQuestions = choiceQuestions;
 	}

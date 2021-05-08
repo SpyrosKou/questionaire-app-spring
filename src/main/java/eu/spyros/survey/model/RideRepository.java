@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

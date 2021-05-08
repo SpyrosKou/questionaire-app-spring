@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import javax.persistence.*;
 
@@ -9,22 +9,22 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "free_text_question")
-public class FreeTextQuestion {
+public class FreeTextQuestion implements Identifiable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String question;
     @ManyToOne
-    @JoinColumn(name = "ride_questionnaire_id", referencedColumnName = "id")
-    private RideQuestionnaire rideQuestionnaire;
+    @JoinColumn(name = "ride_survey_id", referencedColumnName = "id")
+    private RideSurvey rideSurvey;
 
     protected FreeTextQuestion() {
     }
 
-    public FreeTextQuestion(String question, RideQuestionnaire rideQuestionnaire) {
+    public FreeTextQuestion(String question, RideSurvey rideSurvey) {
         this.question = question;
-        this.rideQuestionnaire = rideQuestionnaire;
+        this.rideSurvey = rideSurvey;
     }
 
     public FreeTextQuestion(String question) {
@@ -68,20 +68,20 @@ public class FreeTextQuestion {
     }
 
     /**
-     * Getter for rideQuestionnaire
+     * Getter for rideSurvey
      *
-     * @return rideQuestionnaire
+     * @return rideSurvey
      **/
-    public RideQuestionnaire getRideQuestionnaire() {
-        return rideQuestionnaire;
+    public RideSurvey getRideSurvey() {
+        return rideSurvey;
     }
 
     /**
-     * Setter for rideQuestionnaire
+     * Setter for rideSurvey
      *
-     * @param rideQuestionnaire
+     * @param rideSurvey
      **/
-    public void setRideQuestionnaire(RideQuestionnaire rideQuestionnaire) {
-        this.rideQuestionnaire = rideQuestionnaire;
+    public void setRideSurvey(RideSurvey rideSurvey) {
+        this.rideSurvey = rideSurvey;
     }
 }

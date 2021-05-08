@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package eu.spyros.questionnaire.app;
+package eu.spyros.survey.app;
 
-import eu.spyros.questionnaire.model.CustomerRepository;
+import eu.spyros.survey.model.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

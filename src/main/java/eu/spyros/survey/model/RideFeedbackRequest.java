@@ -1,10 +1,10 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "ride_feedback_request")
-public class RideFeedbackRequest {
+public class RideFeedbackRequest implements Identifiable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,15 +17,15 @@ public class RideFeedbackRequest {
 	 * If not null, the specified questionnaire will be presented to the user
 	 */
 	@ManyToOne
-	@JoinColumn(name = "ride_questionnaire_id", referencedColumnName = "id")
-	private RideQuestionnaire rideQuestionnaire;
+	@JoinColumn(name = "ride_survey_id", referencedColumnName = "id")
+	private RideSurvey rideSurvey;
 	@OneToOne(mappedBy = "rideFeedbackRequest")
 	private CustomerRideFeedback customerRideFeedback;
 
 
-	public RideFeedbackRequest(Ride ride, RideQuestionnaire rideQuestionnaire) {
+	public RideFeedbackRequest(Ride ride, RideSurvey rideSurvey) {
 		this.ride = ride;
-		this.rideQuestionnaire = rideQuestionnaire;
+		this.rideSurvey = rideSurvey;
 	}
 
 	protected RideFeedbackRequest() {
@@ -68,21 +68,21 @@ public class RideFeedbackRequest {
 	}
 
 	/**
-	 * Getter for rideQuestionnaire
+	 * Getter for rideSurvey
 	 *
-	 * @return rideQuestionnaire
+	 * @return rideSurvey
 	 **/
-	public RideQuestionnaire getRideQuestionnaire() {
-		return rideQuestionnaire;
+	public RideSurvey getRideSurvey() {
+		return rideSurvey;
 	}
 
 	/**
-	 * Setter for rideQuestionnaire
+	 * Setter for rideSurvey
 	 *
-	 * @param rideQuestionnaire
+	 * @param rideSurvey
 	 **/
-	public void setRideQuestionnaire(RideQuestionnaire rideQuestionnaire) {
-		this.rideQuestionnaire = rideQuestionnaire;
+	public void setRideSurvey(RideSurvey rideSurvey) {
+		this.rideSurvey = rideSurvey;
 	}
 
 	/**

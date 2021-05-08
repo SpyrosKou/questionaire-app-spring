@@ -1,4 +1,4 @@
-package eu.spyros.questionnaire.model;
+package eu.spyros.survey.model;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -9,7 +9,7 @@ import java.util.StringJoiner;
  */
 @Entity
 @Table(name = "ride")
-public class Ride {
+public class Ride implements Identifiable {
 
 
 	@Id
