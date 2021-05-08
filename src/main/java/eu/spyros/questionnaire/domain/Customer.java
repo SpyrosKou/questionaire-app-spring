@@ -26,15 +26,57 @@ public class Customer {
 				id, firstName, lastName);
 	}
 
+	/**
+	 * Getter for id
+	 *
+	 * @return id
+	 **/
 	public Long getId() {
 		return id;
 	}
 
+	/**
+	 * Getter for firstName
+	 *
+	 * @return firstName
+	 **/
 	public String getFirstName() {
 		return firstName;
 	}
 
+	/**
+	 * Getter for lastName
+	 *
+	 * @return lastName
+	 **/
 	public String getLastName() {
 		return lastName;
+	}
+
+	/**
+	 * Setter for id
+	 *
+	 * @param id
+	 **/
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	/**
+	 * Setter for firstName
+	 *
+	 * @param firstName
+	 **/
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	/**
+	 * Setter for lastName
+	 *
+	 * @param lastName
+	 **/
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 }
