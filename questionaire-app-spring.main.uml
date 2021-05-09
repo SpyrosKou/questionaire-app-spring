@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Persistence</ID>
+  <OriginalElement>JavaeeElement:/58ceac38/questionaire-app-spring.main/questionaire-app-spring.main/jpa/JPA/PersistenceModel</OriginalElement>
+  <nodes>
+    <node x="9.765562913907274" y="525.9337748344371">RideSurvey#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurvey.java</node>
+    <node x="275.5" y="12.0">RideSurveyResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurveyResponse.java</node>
+    <node x="-255.83245033112587" y="-10.0">FreeTextAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextAnswer.java</node>
+    <node x="-28.734437086092726" y="144.4423841059603">ChoiceQuestionOption#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestionOption.java</node>
+    <node x="721.0" y="645.9337748344371">Ride#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Ride.java</node>
+    <node x="-261.33245033112587" y="514.9337748344371">FreeTextQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextQuestion.java</node>
+    <node x="637.5" y="525.9337748344371">CustomerRideFeedbackRequest#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java</node>
+    <node x="-25.234437086092726" y="327.4039735099338">ChoiceQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestion.java</node>
+    <node x="632.5" y="1.0">CustomerRideFeedbackResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackResponse.java</node>
+    <node x="394.0" y="623.9337748344371">Customer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Customer.java</node>
+    <node x="297.0" y="155.4423841059603">ChoiceAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceAnswer.java</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ChoiceAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceAnswer.java" target="ChoiceQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestion.java" relationship="RELATION">
+      <point x="0.0" y="39.0" />
+      <point x="361.5" y="377.4039735099338" />
+      <point x="89.5" y="0.0" />
+    </edge>
+    <edge source="CustomerRideFeedbackRequest#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java" target="RideSurvey#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurvey.java" relationship="RELATION">
+      <point x="-122.5" y="0.0" />
+      <point x="54.5" y="0.0" />
+    </edge>
+    <edge source="CustomerRideFeedbackResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackResponse.java" target="RideSurveyResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurveyResponse.java" relationship="RELATION">
+      <point x="-127.5" y="0.0" />
+      <point x="86.0" y="0.0" />
+    </edge>
+    <edge source="ChoiceAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceAnswer.java" target="RideSurveyResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurveyResponse.java" relationship="RELATION">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="ChoiceAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceAnswer.java" target="ChoiceQuestionOption#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestionOption.java" relationship="RELATION">
+      <point x="-64.5" y="0.0" />
+      <point x="93.0" y="0.0" />
+    </edge>
+    <edge source="FreeTextAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextAnswer.java" target="FreeTextQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextQuestion.java" relationship="RELATION">
+      <point x="0.0" y="50.0" />
+      <point x="0.0" y="-39.0" />
+    </edge>
+    <edge source="CustomerRideFeedbackResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackResponse.java" target="CustomerRideFeedbackRequest#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java" relationship="RELATION">
+      <point x="0.0" y="39.0" />
+      <point x="0.0" y="-28.0" />
+    </edge>
+    <edge source="FreeTextAnswer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextAnswer.java" target="RideSurveyResponse#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurveyResponse.java" relationship="RELATION">
+      <point x="70.0" y="0.0" />
+      <point x="-86.0" y="0.0" />
+    </edge>
+    <edge source="Ride#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Ride.java" target="CustomerRideFeedbackRequest#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java" relationship="RELATION">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="RideSurvey#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurvey.java" target="ChoiceQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestion.java" relationship="RELATION">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="Customer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Customer.java" target="Ride#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Ride.java" relationship="RELATION">
+      <point x="64.5" y="0.0" />
+      <point x="-39.0" y="0.0" />
+    </edge>
+    <edge source="RideSurvey#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurvey.java" target="FreeTextQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextQuestion.java" relationship="RELATION">
+      <point x="-54.5" y="0.0" />
+      <point x="75.5" y="0.0" />
+    </edge>
+    <edge source="ChoiceQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestion.java" target="ChoiceQuestionOption#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/ChoiceQuestionOption.java" relationship="RELATION">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="0.9581218274111675" showDependencies="false" x="357.5" y="432.3629139072848" />
+  <SelectedNodes>
+    <node>RideSurvey#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/RideSurvey.java</node>
+    <node>Ride#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Ride.java</node>
+    <node>FreeTextQuestion#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/FreeTextQuestion.java</node>
+    <node>CustomerRideFeedbackRequest#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java</node>
+    <node>Customer#file://D:/UsersStandalone/Spyros/Personal/Projects/Java/questionaire-app-spring/src/main/java/eu/spyros/survey/model/Customer.java</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Embeddables</Category>
+    <Category>Properties</Category>
+    <Category>Superclasses</Category>
+  </Categories>
+</Diagram>
+
