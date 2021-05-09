@@ -19,11 +19,11 @@ public class ChoiceAnswer implements Identifiable {
 
     private String other;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "choice_question_id", referencedColumnName = "id")
     private ChoiceQuestion choiceQuestion;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "ride_survey_response_id", referencedColumnName = "id")
     private RideSurveyResponse rideSurveyResponse;
 
@@ -35,12 +35,55 @@ public class ChoiceAnswer implements Identifiable {
             inverseJoinColumns =
             @JoinColumn(name = "choice_question_option_id", referencedColumnName = "ID")
     )
-    /**
-     *
-     */
-    private List<ChoiceQuestionOption> questionOptions;
+    private List<ChoiceQuestionOption> choosenOptions;
 
     protected ChoiceAnswer() {
+    }
+
+    /**
+     * @param other
+     * @param choiceQuestion
+     * @param rideSurveyResponse
+     * @param choosenOptions
+     */
+    private ChoiceAnswer(final String other, final ChoiceQuestion choiceQuestion, final RideSurveyResponse rideSurveyResponse, final List<ChoiceQuestionOption> choosenOptions) {
+        Objects.requireNonNull(choiceQuestion);
+        Objects.requireNonNull(rideSurveyResponse);
+        Objects.requireNonNull(choosenOptions);
+
+        this.other = other;
+        this.choiceQuestion = choiceQuestion;
+        this.rideSurveyResponse = rideSurveyResponse;
+        this.choosenOptions = choosenOptions;
+    }
+
+    /**
+     * @param other
+     * @param choiceQuestion
+     * @param rideSurveyResponse
+     * @param selectedQuestionOption
+     *
+     * @return
+     */
+    public static final ChoiceAnswer createSingleChoiceAnswer(final String other, final ChoiceQuestion choiceQuestion, final RideSurveyResponse rideSurveyResponse, final ChoiceQuestionOption selectedQuestionOption) {
+        Objects.requireNonNull(choiceQuestion);
+        Objects.requireNonNull(rideSurveyResponse);
+        Objects.requireNonNull(selectedQuestionOption);
+        return new ChoiceAnswer(other, choiceQuestion, rideSurveyResponse, List.of(selectedQuestionOption));
+    }
+
+    /**
+     * @param other
+     * @param choiceQuestion
+     * @param rideSurveyResponse
+     * @param questionOptions
+     */
+    public static final ChoiceAnswer createMultipleChoiceAnswer(final String other, final ChoiceQuestion choiceQuestion, final RideSurveyResponse rideSurveyResponse, final List<ChoiceQuestionOption> questionOptions) {
+        Objects.requireNonNull(choiceQuestion);
+        Objects.requireNonNull(rideSurveyResponse);
+        Objects.requireNonNull(questionOptions);
+
+        return new ChoiceAnswer(other, choiceQuestion, rideSurveyResponse, questionOptions);
     }
 
     @Override
@@ -48,12 +91,12 @@ public class ChoiceAnswer implements Identifiable {
         if (this == o) return true;
         if (!(o instanceof ChoiceAnswer)) return false;
         ChoiceAnswer that = (ChoiceAnswer) o;
-        return Objects.equals(getId(), that.getId()) && Objects.equals(getOther(), that.getOther()) && Objects.equals(getChoiceQuestion(), that.getChoiceQuestion()) && Objects.equals(getRideSurveyResponse(), that.getRideSurveyResponse()) && Objects.equals(getQuestionOptions(), that.getQuestionOptions());
+        return Objects.equals(getId(), that.getId()) && Objects.equals(getOther(), that.getOther()) && Objects.equals(getChoiceQuestion(), that.getChoiceQuestion()) && Objects.equals(getRideSurveyResponse(), that.getRideSurveyResponse()) && Objects.equals(getChoosenOptions(), that.getChoosenOptions());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getOther(), getChoiceQuestion(), getRideSurveyResponse(), getQuestionOptions());
+        return Objects.hash(getId(), getOther(), getChoiceQuestion(), getRideSurveyResponse(), getChoosenOptions());
     }
 
     /**
@@ -133,8 +176,8 @@ public class ChoiceAnswer implements Identifiable {
      *
      * @return questionOptions
      **/
-    public List<ChoiceQuestionOption> getQuestionOptions() {
-        return questionOptions;
+    public List<ChoiceQuestionOption> getChoosenOptions() {
+        return choosenOptions;
     }
 
     /**
@@ -142,8 +185,8 @@ public class ChoiceAnswer implements Identifiable {
      *
      * @param questionOptions
      **/
-    public void setQuestionOptions(List<ChoiceQuestionOption> questionOptions) {
-        this.questionOptions = questionOptions;
+    public void setChoosenOptions(List<ChoiceQuestionOption> questionOptions) {
+        this.choosenOptions = questionOptions;
     }
 
     @Override
@@ -153,7 +196,7 @@ public class ChoiceAnswer implements Identifiable {
                 .add("other='" + other + "'")
                 .add("choiceQuestion=" + Identifiable.toString(choiceQuestion))
                 .add("rideSurveyResponse=" + Identifiable.toString(rideSurveyResponse))
-                .add("questionOptions=" + Identifiable.toString(questionOptions))
+                .add("questionOptions=" + Identifiable.toString(choosenOptions))
                 .toString();
     }
 }
