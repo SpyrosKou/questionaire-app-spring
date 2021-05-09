@@ -22,7 +22,14 @@ public class CustomerRideFeedbackResponse implements Identifiable {
     private CustomerRideFeedbackRequest customerRideFeedbackRequest;
 
     @OneToOne(mappedBy = "customerRideFeedbackResponse")
-    private RideSurveyResponse surveyResponse;
+    private RideSurveyResponse rideSurveyResponse;
+
+    public CustomerRideFeedbackResponse(Double starRating, CustomerRideFeedbackRequest customerRideFeedbackRequest) {
+        Objects.requireNonNull(starRating);
+        Objects.requireNonNull(customerRideFeedbackRequest);
+        this.starRating = starRating;
+        this.customerRideFeedbackRequest = customerRideFeedbackRequest;
+    }
 
     protected CustomerRideFeedbackResponse() {
     }
@@ -87,8 +94,8 @@ public class CustomerRideFeedbackResponse implements Identifiable {
      *
      * @return surveyResponse
      **/
-    public RideSurveyResponse getSurveyResponse() {
-        return surveyResponse;
+    public RideSurveyResponse getRideSurveyResponse() {
+        return rideSurveyResponse;
     }
 
     /**
@@ -96,8 +103,8 @@ public class CustomerRideFeedbackResponse implements Identifiable {
      *
      * @param surveyResponse
      **/
-    public void setSurveyResponse(RideSurveyResponse surveyResponse) {
-        this.surveyResponse = surveyResponse;
+    public void setRideSurveyResponse(RideSurveyResponse surveyResponse) {
+        this.rideSurveyResponse = surveyResponse;
     }
 
     @Override
@@ -105,12 +112,12 @@ public class CustomerRideFeedbackResponse implements Identifiable {
         if (this == o) return true;
         if (!(o instanceof CustomerRideFeedbackResponse)) return false;
         CustomerRideFeedbackResponse that = (CustomerRideFeedbackResponse) o;
-        return Objects.equals(getId(), that.getId()) && Objects.equals(getStarRating(), that.getStarRating()) && Objects.equals(getCustomerRideFeedbackRequest(), that.getCustomerRideFeedbackRequest()) && Objects.equals(getSurveyResponse(), that.getSurveyResponse());
+        return Objects.equals(getId(), that.getId()) && Objects.equals(getStarRating(), that.getStarRating()) && Objects.equals(getCustomerRideFeedbackRequest(), that.getCustomerRideFeedbackRequest()) && Objects.equals(getRideSurveyResponse(), that.getRideSurveyResponse());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getStarRating(), getCustomerRideFeedbackRequest(), getSurveyResponse());
+        return Objects.hash(getId(), getStarRating(), getCustomerRideFeedbackRequest(), getRideSurveyResponse());
     }
 
     @Override
@@ -119,7 +126,7 @@ public class CustomerRideFeedbackResponse implements Identifiable {
                 .add("id=" + id)
                 .add("starRating=" + starRating)
                 .add("customerRideFeedbackRequest=" + Identifiable.toString(customerRideFeedbackRequest))
-                .add("surveyResponse=" + Identifiable.toString(surveyResponse))
+                .add("surveyResponse=" + Identifiable.toString(rideSurveyResponse))
                 .toString();
     }
 }

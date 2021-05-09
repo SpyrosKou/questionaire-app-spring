@@ -1,6 +1,7 @@
 package eu.spyros.survey.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
@@ -31,6 +32,71 @@ public class ChoiceQuestion implements Identifiable {
     private List<ChoiceQuestionOption> choiceQuestionOptions;
 
     protected ChoiceQuestion() {
+    }
+
+
+    /**
+     * @param question
+     * @param allowedSelections
+     * @param rideSurvey
+     * @param choiceQuestionOptions
+     */
+    private ChoiceQuestion(final String question, final Integer allowedSelections, final RideSurvey rideSurvey, final List<String> choiceQuestionOptions) {
+
+        Objects.requireNonNull(question);
+        Objects.requireNonNull(allowedSelections);
+        Objects.requireNonNull(rideSurvey);
+        Objects.requireNonNull(choiceQuestionOptions);
+
+        this.question = question;
+        this.allowedSelections = allowedSelections;
+        this.rideSurvey = rideSurvey;
+
+        final List<ChoiceQuestionOption> choiceQuestionOptionList = new ArrayList<>();
+        int i = 1;
+        for (final String option : choiceQuestionOptions) {
+            choiceQuestionOptionList.add(new ChoiceQuestionOption(i++, option, this));
+        }
+        this.choiceQuestionOptions = choiceQuestionOptionList;
+
+    }
+
+    /**
+     * Create a {@link ChoiceQuestion} that requires 1 single answer.
+     * <p>
+     *
+     * @param question
+     * @param rideSurvey
+     * @param choiceQuestionOptions
+     *
+     * @return
+     */
+    public static final ChoiceQuestion createSingleChoice(final String question, final RideSurvey rideSurvey, final List<String> choiceQuestionOptions) {
+        Objects.requireNonNull(question);
+        Objects.requireNonNull(rideSurvey);
+        Objects.requireNonNull(choiceQuestionOptions);
+        return new ChoiceQuestion(question, 1, rideSurvey, choiceQuestionOptions);
+    }
+
+    /**
+     * Create a {@link ChoiceQuestion} that requires a number of answers defined by allowedSelections.
+     * This constructor can also be used to create a single choice question.
+     *
+     * @param question
+     * @param allowedSelections
+     * @param rideSurvey
+     * @param choiceQuestionOptions
+     *
+     * @return
+     */
+    public static final ChoiceQuestion createMultipleChoice(final String question, final Integer allowedSelections, final RideSurvey rideSurvey, final List<String> choiceQuestionOptions) {
+
+        Objects.requireNonNull(question);
+        Objects.requireNonNull(allowedSelections);
+        Objects.requireNonNull(rideSurvey);
+        Objects.requireNonNull(choiceQuestionOptions);
+
+        return new ChoiceQuestion(question, allowedSelections, rideSurvey, choiceQuestionOptions);
     }
 
     /**
@@ -136,6 +202,9 @@ public class ChoiceQuestion implements Identifiable {
         return Objects.hash(getId(), getQuestion(), getAllowedSelections(), getRideSurvey(), getChoiceQuestionOptions());
     }
 
+    /**
+     * @return
+     */
     @Override
     public String toString() {
         return new StringJoiner(", ", ChoiceQuestion.class.getSimpleName() + "[", "]")

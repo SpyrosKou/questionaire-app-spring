@@ -21,12 +21,7 @@ public class RideSurvey implements Identifiable {
 	@OneToMany(mappedBy = "rideSurvey")
 	private List<ChoiceQuestion> choiceQuestions;
 
-	protected RideSurvey() {
-	}
-
-	public RideSurvey(List<FreeTextQuestion> freeTextQuestions, List<ChoiceQuestion> choiceQuestions) {
-		this.freeTextQuestions = freeTextQuestions;
-		this.choiceQuestions = choiceQuestions;
+	public RideSurvey() {
 	}
 
 

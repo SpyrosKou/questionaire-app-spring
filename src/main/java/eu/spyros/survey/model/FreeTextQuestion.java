@@ -29,9 +29,6 @@ public class FreeTextQuestion implements Identifiable {
         this.rideSurvey = rideSurvey;
     }
 
-    public FreeTextQuestion(String question) {
-        this.question = question;
-    }
 
     /**
      * Getter for id

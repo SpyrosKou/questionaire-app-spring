@@ -19,8 +19,8 @@ public class CustomerRideFeedbackRequest implements Identifiable {
 	@ManyToOne
 	@JoinColumn(name = "ride_survey_id", referencedColumnName = "id")
 	private RideSurvey rideSurvey;
-	@OneToOne(mappedBy = "rideFeedbackRequest")
-	private CustomerRideFeedbackResponse customerRideFeedback;
+	@OneToOne(mappedBy = "customerRideFeedbackRequest")
+	private CustomerRideFeedbackResponse customerRideFeedbackResponse;
 
 
 	public CustomerRideFeedbackRequest(Ride ride, RideSurvey rideSurvey) {
@@ -36,6 +36,7 @@ public class CustomerRideFeedbackRequest implements Identifiable {
 	 *
 	 * @return id
 	 **/
+	@Override
 	public Long getId() {
 		return id;
 	}
@@ -86,20 +87,20 @@ public class CustomerRideFeedbackRequest implements Identifiable {
 	}
 
 	/**
-	 * Getter for customerRideFeedback
+	 * Getter for customerRideFeedbackResponse
 	 *
-	 * @return customerRideFeedback
+	 * @return customerRideFeedbackResponse
 	 **/
-	public CustomerRideFeedbackResponse getCustomerRideFeedback() {
-		return customerRideFeedback;
+	public CustomerRideFeedbackResponse getCustomerRideFeedbackResponse() {
+		return customerRideFeedbackResponse;
 	}
 
 	/**
-	 * Setter for customerRideFeedback
+	 * Setter for customerRideFeedbackResponse
 	 *
-	 * @param customerRideFeedback
+	 * @param customerRideFeedbackResponse
 	 **/
-	public void setCustomerRideFeedback(CustomerRideFeedbackResponse customerRideFeedback) {
-		this.customerRideFeedback = customerRideFeedback;
+	public void setCustomerRideFeedbackResponse(CustomerRideFeedbackResponse customerRideFeedbackResponse) {
+		this.customerRideFeedbackResponse = customerRideFeedbackResponse;
 	}
 }
