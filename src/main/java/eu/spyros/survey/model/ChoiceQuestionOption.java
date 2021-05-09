@@ -24,7 +24,7 @@ public class ChoiceQuestionOption implements Identifiable {
      * Option textual description
      */
     private String option;
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "choice_question_id", referencedColumnName = "id")
     private ChoiceQuestion choiceQuestion;
 
@@ -35,9 +35,24 @@ public class ChoiceQuestionOption implements Identifiable {
      * @param choiceQuestion
      */
     public ChoiceQuestionOption(Integer sequence, String option, ChoiceQuestion choiceQuestion) {
+        Objects.requireNonNull(sequence);
+        Objects.requireNonNull(option);
+        Objects.requireNonNull(choiceQuestion);
         this.sequence = sequence;
         this.option = option;
         this.choiceQuestion = choiceQuestion;
+    }
+
+    /**
+     * @param sequence
+     * @param option
+     */
+    public ChoiceQuestionOption(Integer sequence, String option) {
+        Objects.requireNonNull(sequence);
+        Objects.requireNonNull(option);
+        this.sequence = sequence;
+        this.option = option;
+
     }
 
     /**
@@ -45,19 +60,6 @@ public class ChoiceQuestionOption implements Identifiable {
      */
     protected ChoiceQuestionOption() {
 
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof ChoiceQuestionOption)) return false;
-        ChoiceQuestionOption that = (ChoiceQuestionOption) o;
-        return Objects.equals(getId(), that.getId()) && Objects.equals(getSequence(), that.getSequence()) && Objects.equals(getOption(), that.getOption()) && Objects.equals(getChoiceQuestion(), that.getChoiceQuestion());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getSequence(), getOption(), getChoiceQuestion());
     }
 
     /**
@@ -132,6 +134,18 @@ public class ChoiceQuestionOption implements Identifiable {
         this.choiceQuestion = choiceQuestion;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ChoiceQuestionOption)) return false;
+        ChoiceQuestionOption that = (ChoiceQuestionOption) o;
+        return Objects.equals(getId(), that.getId()) && Objects.equals(getSequence(), that.getSequence()) && Objects.equals(getOption(), that.getOption()) && Objects.equals(getChoiceQuestion(), that.getChoiceQuestion());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getSequence(), getOption(), getChoiceQuestion());
+    }
 
     @Override
     public String toString() {
@@ -142,4 +156,5 @@ public class ChoiceQuestionOption implements Identifiable {
                 .add("choiceQuestion=" + Identifiable.toString(choiceQuestion))
                 .toString();
     }
+
 }
