@@ -9,7 +9,7 @@ public class CustomerRideFeedbackRequest implements Identifiable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@OneToOne
+	@OneToOne(optional = false)
 	@JoinColumn(name = "ride_id", referencedColumnName = "id")
 	private Ride ride;
 	/**
