@@ -45,36 +45,44 @@ public class AccessingDataRestApplication {
             final Customer davidPalmer = customerRepository.save(new Customer("David", "Palmer"));
             final Customer micheleDessler = customerRepository.save(new Customer("Michelle", "Dessler"));
 
+            {//Survey
+                //Create a survey
+                final RideSurvey satisfactionSurvey = rideSurveyRepository.save(new RideSurvey());
 
-            //Create a survey
-            final RideSurvey satisfactionSurvey = rideSurveyRepository.save(new RideSurvey());
+                final FreeTextQuestion freeTextQuestion = freeTextQuestionRepository.save(new FreeTextQuestion("What did you enjoy in the ride?", satisfactionSurvey));
 
-            final FreeTextQuestion freeTextQuestion = freeTextQuestionRepository.save(new FreeTextQuestion("What did you enjoy in the ride?", satisfactionSurvey));
+                final ChoiceQuestion multipleChoiceQuestion = choiceQuestionRepository.save(ChoiceQuestion.createMultipleChoice("What did you appreciate?", 3, satisfactionSurvey, List.of("Vehicle", "Music", "Safety")));
+                multipleChoiceQuestion.getChoiceQuestionOptions().stream().forEach(choiceQuestionOptionRepository::save);
 
-            final ChoiceQuestion multipleChoiceQuestion = choiceQuestionRepository.save(ChoiceQuestion.createMultipleChoice("What did you appreciate?", 3, satisfactionSurvey, List.of("Vehicle", "Music", "Safety")));
-            multipleChoiceQuestion.getChoiceQuestionOptions().stream().forEach(choiceQuestionOptionRepository::save);
-
-            final ChoiceQuestion singleChoiceQuestion = choiceQuestionRepository.save(ChoiceQuestion.createSingleChoice("Would you ride again?", satisfactionSurvey, List.of("Yes", "No")));
-            singleChoiceQuestion.getChoiceQuestionOptions().stream().forEach(choiceQuestionOptionRepository::save);
+                final ChoiceQuestion singleChoiceQuestion = choiceQuestionRepository.save(ChoiceQuestion.createSingleChoice("Would you ride again?", satisfactionSurvey, List.of("Yes", "No")));
+                singleChoiceQuestion.getChoiceQuestionOptions().stream().forEach(choiceQuestionOptionRepository::save);
 
 
-            final Ride jacksRide = rideRepository.save(new Ride(jackBauer));
+                final Ride jacksRide = rideRepository.save(new Ride(jackBauer));
 
-            //Lets assume that the system requests for a survey
-            final CustomerRideFeedbackRequest customerRideFeedbackRequest = customerRideFeedbackRequestRepository.save(new CustomerRideFeedbackRequest(jacksRide, satisfactionSurvey));
+                //Lets assume that the system requests for a survey
+                final CustomerRideFeedbackRequest customerRideFeedbackRequest = customerRideFeedbackRequestRepository.save(new CustomerRideFeedbackRequest(jacksRide, satisfactionSurvey));
 
-            //first part of the CustomerRideFeedbackResponse
-            final CustomerRideFeedbackResponse customerRideFeedbackResponse = customerRideFeedbackResponseRepository.save(new CustomerRideFeedbackResponse(5.0, customerRideFeedbackRequest));
+                //first part of the CustomerRideFeedbackResponse
+                final CustomerRideFeedbackResponse customerRideFeedbackResponse = customerRideFeedbackResponseRepository.save(new CustomerRideFeedbackResponse(5.0, customerRideFeedbackRequest));
 
-            //First part of the RideSurveyResponse
-            final RideSurveyResponse rideSurveyResponse = rideSurveyResponseRepository.save(new RideSurveyResponse(customerRideFeedbackResponse));
+                //First part of the RideSurveyResponse
+                final RideSurveyResponse rideSurveyResponse = rideSurveyResponseRepository.save(new RideSurveyResponse(customerRideFeedbackResponse));
 
-            //And the answers
-            final FreeTextAnswer freeTextAnswer = freeTextAnswerRepository.save(new FreeTextAnswer("The lack of traffic", "", rideSurveyResponse, freeTextQuestion));
-            final ChoiceAnswer multipleChoiceAnswer = choiceAnswerRepository.save(ChoiceAnswer.createMultipleChoiceAnswer("", multipleChoiceQuestion, rideSurveyResponse, multipleChoiceQuestion.getChoiceQuestionOptions()));
+                //And the answers
+                final FreeTextAnswer freeTextAnswer = freeTextAnswerRepository.save(new FreeTextAnswer("The lack of traffic", "", rideSurveyResponse, freeTextQuestion));
+                final ChoiceAnswer multipleChoiceAnswer = choiceAnswerRepository.save(ChoiceAnswer.createMultipleChoiceAnswer("", multipleChoiceQuestion, rideSurveyResponse, multipleChoiceQuestion.getChoiceQuestionOptions()));
 
-            final ChoiceAnswer singleChoiceAnswer = choiceAnswerRepository.save(ChoiceAnswer.createSingleChoiceAnswer("", multipleChoiceQuestion, rideSurveyResponse, singleChoiceQuestion.getChoiceQuestionOptions().stream().findFirst().get()));
-
+                final ChoiceAnswer singleChoiceAnswer = choiceAnswerRepository.save(ChoiceAnswer.createSingleChoiceAnswer("", multipleChoiceQuestion, rideSurveyResponse, singleChoiceQuestion.getChoiceQuestionOptions().stream().findFirst().get()));
+            }
+            //No survey
+            {
+                final Ride chloesRide = rideRepository.save(new Ride(chloeOBrian));
+                //Lets assume that the system does not request for a survey
+                final CustomerRideFeedbackRequest customerRideFeedbackRequest = customerRideFeedbackRequestRepository.save(new CustomerRideFeedbackRequest(chloesRide, null));
+                //first and final part of the CustomerRideFeedbackResponse
+                final CustomerRideFeedbackResponse customerRideFeedbackResponse = customerRideFeedbackResponseRepository.save(new CustomerRideFeedbackResponse(5.0, customerRideFeedbackRequest));
+            }
 
         };
     }
