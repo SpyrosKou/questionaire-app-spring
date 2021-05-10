@@ -7,7 +7,13 @@ A simple questionnaire experimentation app using [Spring Data JPA](https://sprin
   
 <img src="https://raw.githubusercontent.com/SpyrosKou/questionaire-app-spring/main/questionaire-app-spring.svg">
 
+- Draft React JS Design
 
+<img src="https://raw.githubusercontent.com/SpyrosKou/questionaire-app-spring/main/ReactUIDesignClass.svg">
+
+- Draft MicroService Design in a hypothetical scenario
+
+<img src="https://raw.githubusercontent.com/SpyrosKou/questionaire-app-spring/main/MIcroServiceArchitecture.svg">
 - 
 - All data are persisted in memory, not permanently stored.
 - If a survey needs to be filled for a ride, the [CustomerRideFeedbackRequest](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java) should include a [RideSurvey](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/RideSurvey.java)
