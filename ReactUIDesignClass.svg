@@ -219,7 +219,6 @@ link CustomerFeedbackFormNote to CustomerFeedbackForm-->
         <path codeLine="78"
               d="M160,65.12 C160,69.4013 160,73.9783 160,78.7167 C160,81.0859 160,83.4954 160,85.9285 C160,86.5368 160,87.1465 160,87.7575 C160,88.0629 160,88.3687 160,88.6748 "
               fill="none" id="CustomerFeedbackFormNote-CustomerFeedbackForm"
-              style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[efba01f897d90ae045e192357e50384d]
-
+              style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/>
     </g>
 </svg>
