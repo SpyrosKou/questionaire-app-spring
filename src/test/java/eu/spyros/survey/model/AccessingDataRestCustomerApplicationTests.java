@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package eu.spyros.survey.app;
+package eu.spyros.survey.model;
 
 import eu.spyros.survey.model.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
