@@ -7,13 +7,19 @@ A simple questionnaire experimentation app using [Spring Data JPA](https://sprin
   
 <img src="https://raw.githubusercontent.com/SpyrosKou/questionaire-app-spring/main/questionaire-app-spring.svg">
 
+
+- 
+- All data are persisted in memory, not permanently stored.
+- If a survey needs to be filled for a ride, the [CustomerRideFeedbackRequest](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/CustomerRideFeedbackRequest.java) should include a [RideSurvey](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/RideSurvey.java)
+- A [RideSurvey](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/RideSurvey.java)  can be reused or a different [RideSurvey](https://github.com/SpyrosKou/questionaire-app-spring/blob/main/src/main/java/eu/spyros/survey/model/RideSurvey.java)  can be created and used when needed.
+
 ## Requirements
 Java Version 11 or newer is required.
 
 ## Instructions
-
+Data can be viewed, in a raw json hal format, from [the rides](http://127.0.0.1:8080/rides) after the application is started.
 ### Windows
-Run `gradlew.bat bootRun`
+Start the application by running `gradlew.bat bootRun`.
 
 ### Linux
-Run `./gradlew bootRun`
+Run `./gradlew bootRun`. 
