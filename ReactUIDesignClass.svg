@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
+     height="536px" preserveAspectRatio="none" style="width:1104px;height:536px;" version="1.1" viewBox="0 0 1104 536"
+     width="1104px" zoomAndPan="magnify">
+    <defs/>
+    <g><!--MD5=[ee135df06a72000f1dbcf03b89ab4224]
+cluster CustomerFeedbackForm-->
+        <polygon fill="#DDDDDD" points="152,89,331,89,338,112.6094,1087,112.6094,1087,529,152,529,152,89"
+                 style="stroke:#000000;stroke-width:1.5;"/>
+        <line style="stroke:#000000;stroke-width:1.5;" x1="152" x2="338" y1="112.6094" y2="112.6094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="173" x="156" y="105.5332">CustomerFeedbackForm
+        </text><!--MD5=[2a32d61e815c490304b5aa48b7d22b9c]
+class CustomerFeedbackForm.CustomerResponse-->
+        <rect codeLine="4" fill="#FEFECE" height="48" id="CustomerFeedbackForm.CustomerResponse"
+              style="stroke:#A80036;stroke-width:1.5;" width="145" x="772.5" y="133"/>
+        <ellipse cx="787.5" cy="149" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M789.5,145.5 Q789.7031,145 789.9375,144.75 Q790.1719,144.5 790.4375,144.5 Q790.9063,144.5 791.2031,144.7813 Q791.5,145.0625 791.5,145.7188 L791.5,147.2813 Q791.5,147.9375 791.2188,148.2188 Q790.9375,148.5 790.5,148.5 Q790.1094,148.5 789.8594,148.3281 Q789.6094,148.1563 789.5,147.7031 Q789.4531,147.3906 789.2813,147.2188 Q788.9688,146.8906 788.4063,146.7031 Q787.8438,146.5 787.2813,146.5 Q786.5781,146.5 785.9844,146.7813 Q785.4063,147.0625 784.9531,147.6875 Q784.5,148.3125 784.5,149.1719 L784.5,150.0938 Q784.5,151.125 785.3438,151.8125 Q786.1875,152.5 787.6875,152.5 Q788.5781,152.5 789.2031,152.2969 Q789.5625,152.1875 789.9688,151.8281 Q790.2344,151.625 790.375,151.5625 Q790.5156,151.5 790.6875,151.5 Q791.0156,151.5 791.25,151.7656 Q791.5,152.0156 791.5,152.375 Q791.5,152.7188 791.1563,153.125 Q790.6563,153.7188 789.8594,154.0469 Q788.8125,154.5 787.5313,154.5 Q786.0313,154.5 784.8281,153.9063 Q783.8594,153.4375 783.1719,152.4219 Q782.5,151.4063 782.5,150.2031 L782.5,149.1094 Q782.5,147.8594 783.0938,146.7656 Q783.7031,145.6719 784.75,145.0938 Q785.8125,144.5 787,144.5 Q787.7188,144.5 788.3438,144.75 Q788.9688,145 789.5,145.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="113" x="801.5"
+              y="153.9102">CustomerResponse
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="773.5" x2="916.5" y1="165" y2="165"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="773.5" x2="916.5" y1="173" y2="173"/><!--MD5=[323f72ac39654c5819feb1278e74815c]
+class CustomerFeedbackForm.Rating-->
+        <rect codeLine="9" fill="#FEFECE" height="48" id="CustomerFeedbackForm.Rating"
+              style="stroke:#A80036;stroke-width:1.5;" width="68" x="984" y="241"/>
+        <ellipse cx="999" cy="257" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M1001,253.5 Q1001.2031,253 1001.4375,252.75 Q1001.6719,252.5 1001.9375,252.5 Q1002.4063,252.5 1002.7031,252.7813 Q1003,253.0625 1003,253.7188 L1003,255.2813 Q1003,255.9375 1002.7188,256.2188 Q1002.4375,256.5 1002,256.5 Q1001.6094,256.5 1001.3594,256.3281 Q1001.1094,256.1563 1001,255.7031 Q1000.9531,255.3906 1000.7813,255.2188 Q1000.4688,254.8906 999.9063,254.7031 Q999.3438,254.5 998.7813,254.5 Q998.0781,254.5 997.4844,254.7813 Q996.9063,255.0625 996.4531,255.6875 Q996,256.3125 996,257.1719 L996,258.0938 Q996,259.125 996.8438,259.8125 Q997.6875,260.5 999.1875,260.5 Q1000.0781,260.5 1000.7031,260.2969 Q1001.0625,260.1875 1001.4688,259.8281 Q1001.7344,259.625 1001.875,259.5625 Q1002.0156,259.5 1002.1875,259.5 Q1002.5156,259.5 1002.75,259.7656 Q1003,260.0156 1003,260.375 Q1003,260.7188 1002.6563,261.125 Q1002.1563,261.7188 1001.3594,262.0469 Q1000.3125,262.5 999.0313,262.5 Q997.5313,262.5 996.3281,261.9063 Q995.3594,261.4375 994.6719,260.4219 Q994,259.4063 994,258.2031 L994,257.1094 Q994,255.8594 994.5938,254.7656 Q995.2031,253.6719 996.25,253.0938 Q997.3125,252.5 998.5,252.5 Q999.2188,252.5 999.8438,252.75 Q1000.4688,253 1001,253.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="1013"
+              y="261.9102">Rating
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="985" x2="1051" y1="273" y2="273"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="985" x2="1051" y1="281" y2="281"/><!--MD5=[2f675a74674e1df5838444709ef787cf]
+class CustomerFeedbackForm.Submit-->
+        <rect codeLine="12" fill="#FEFECE" height="48" id="CustomerFeedbackForm.Submit"
+              style="stroke:#A80036;stroke-width:1.5;" width="71" x="877.5" y="241"/>
+        <ellipse cx="892.5" cy="257" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M894.5,253.5 Q894.7031,253 894.9375,252.75 Q895.1719,252.5 895.4375,252.5 Q895.9063,252.5 896.2031,252.7813 Q896.5,253.0625 896.5,253.7188 L896.5,255.2813 Q896.5,255.9375 896.2188,256.2188 Q895.9375,256.5 895.5,256.5 Q895.1094,256.5 894.8594,256.3281 Q894.6094,256.1563 894.5,255.7031 Q894.4531,255.3906 894.2813,255.2188 Q893.9688,254.8906 893.4063,254.7031 Q892.8438,254.5 892.2813,254.5 Q891.5781,254.5 890.9844,254.7813 Q890.4063,255.0625 889.9531,255.6875 Q889.5,256.3125 889.5,257.1719 L889.5,258.0938 Q889.5,259.125 890.3438,259.8125 Q891.1875,260.5 892.6875,260.5 Q893.5781,260.5 894.2031,260.2969 Q894.5625,260.1875 894.9688,259.8281 Q895.2344,259.625 895.375,259.5625 Q895.5156,259.5 895.6875,259.5 Q896.0156,259.5 896.25,259.7656 Q896.5,260.0156 896.5,260.375 Q896.5,260.7188 896.1563,261.125 Q895.6563,261.7188 894.8594,262.0469 Q893.8125,262.5 892.5313,262.5 Q891.0313,262.5 889.8281,261.9063 Q888.8594,261.4375 888.1719,260.4219 Q887.5,259.4063 887.5,258.2031 L887.5,257.1094 Q887.5,255.8594 888.0938,254.7656 Q888.7031,253.6719 889.75,253.0938 Q890.8125,252.5 892,252.5 Q892.7188,252.5 893.3438,252.75 Q893.9688,253 894.5,253.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="39" x="906.5"
+              y="261.9102">Submit
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="878.5" x2="947.5" y1="273" y2="273"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="878.5" x2="947.5" y1="281" y2="281"/><!--MD5=[6ffc10d2410376937e78c984e0f48eb6]
+class CustomerFeedbackForm.Survey-->
+        <rect codeLine="15" fill="#FEFECE" height="48" id="CustomerFeedbackForm.Survey"
+              style="stroke:#A80036;stroke-width:1.5;" width="68" x="553" y="241"/>
+        <ellipse cx="568" cy="257" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M570,253.5 Q570.2031,253 570.4375,252.75 Q570.6719,252.5 570.9375,252.5 Q571.4063,252.5 571.7031,252.7813 Q572,253.0625 572,253.7188 L572,255.2813 Q572,255.9375 571.7188,256.2188 Q571.4375,256.5 571,256.5 Q570.6094,256.5 570.3594,256.3281 Q570.1094,256.1563 570,255.7031 Q569.9531,255.3906 569.7813,255.2188 Q569.4688,254.8906 568.9063,254.7031 Q568.3438,254.5 567.7813,254.5 Q567.0781,254.5 566.4844,254.7813 Q565.9063,255.0625 565.4531,255.6875 Q565,256.3125 565,257.1719 L565,258.0938 Q565,259.125 565.8438,259.8125 Q566.6875,260.5 568.1875,260.5 Q569.0781,260.5 569.7031,260.2969 Q570.0625,260.1875 570.4688,259.8281 Q570.7344,259.625 570.875,259.5625 Q571.0156,259.5 571.1875,259.5 Q571.5156,259.5 571.75,259.7656 Q572,260.0156 572,260.375 Q572,260.7188 571.6563,261.125 Q571.1563,261.7188 570.3594,262.0469 Q569.3125,262.5 568.0313,262.5 Q566.5313,262.5 565.3281,261.9063 Q564.3594,261.4375 563.6719,260.4219 Q563,259.4063 563,258.2031 L563,257.1094 Q563,255.8594 563.5938,254.7656 Q564.2031,253.6719 565.25,253.0938 Q566.3125,252.5 567.5,252.5 Q568.2188,252.5 568.8438,252.75 Q569.4688,253 570,253.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="36" x="582"
+              y="261.9102">Survey
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="554" x2="620" y1="273" y2="273"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="554" x2="620" y1="281" y2="281"/><!--MD5=[9540236a21ba688fc15b1ff50a0b34bd]
+class CustomerFeedbackForm.FreeTextQuestions-->
+        <rect codeLine="20" fill="#FEFECE" height="48" id="CustomerFeedbackForm.FreeTextQuestions"
+              style="stroke:#A80036;stroke-width:1.5;" width="136" x="927" y="349"/>
+        <ellipse cx="942" cy="365" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M944,361.5 Q944.2031,361 944.4375,360.75 Q944.6719,360.5 944.9375,360.5 Q945.4063,360.5 945.7031,360.7813 Q946,361.0625 946,361.7188 L946,363.2813 Q946,363.9375 945.7188,364.2188 Q945.4375,364.5 945,364.5 Q944.6094,364.5 944.3594,364.3281 Q944.1094,364.1563 944,363.7031 Q943.9531,363.3906 943.7813,363.2188 Q943.4688,362.8906 942.9063,362.7031 Q942.3438,362.5 941.7813,362.5 Q941.0781,362.5 940.4844,362.7813 Q939.9063,363.0625 939.4531,363.6875 Q939,364.3125 939,365.1719 L939,366.0938 Q939,367.125 939.8438,367.8125 Q940.6875,368.5 942.1875,368.5 Q943.0781,368.5 943.7031,368.2969 Q944.0625,368.1875 944.4688,367.8281 Q944.7344,367.625 944.875,367.5625 Q945.0156,367.5 945.1875,367.5 Q945.5156,367.5 945.75,367.7656 Q946,368.0156 946,368.375 Q946,368.7188 945.6563,369.125 Q945.1563,369.7188 944.3594,370.0469 Q943.3125,370.5 942.0313,370.5 Q940.5313,370.5 939.3281,369.9063 Q938.3594,369.4375 937.6719,368.4219 Q937,367.4063 937,366.2031 L937,365.1094 Q937,363.8594 937.5938,362.7656 Q938.2031,361.6719 939.25,361.0938 Q940.3125,360.5 941.5,360.5 Q942.2188,360.5 942.8438,360.75 Q943.4688,361 944,361.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="104" x="956"
+              y="369.9102">FreeTextQuestions
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="928" x2="1062" y1="381" y2="381"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="928" x2="1062" y1="389" y2="389"/><!--MD5=[3839d3f589b89ae506f52d731e4dc4ea]
+class CustomerFeedbackForm.FreeTextQuestion-->
+        <rect codeLine="25" fill="#FEFECE" height="48" id="CustomerFeedbackForm.FreeTextQuestion"
+              style="stroke:#A80036;stroke-width:1.5;" width="129" x="930.5" y="457"/>
+        <ellipse cx="945.5" cy="473" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M947.5,469.5 Q947.7031,469 947.9375,468.75 Q948.1719,468.5 948.4375,468.5 Q948.9063,468.5 949.2031,468.7813 Q949.5,469.0625 949.5,469.7188 L949.5,471.2813 Q949.5,471.9375 949.2188,472.2188 Q948.9375,472.5 948.5,472.5 Q948.1094,472.5 947.8594,472.3281 Q947.6094,472.1563 947.5,471.7031 Q947.4531,471.3906 947.2813,471.2188 Q946.9688,470.8906 946.4063,470.7031 Q945.8438,470.5 945.2813,470.5 Q944.5781,470.5 943.9844,470.7813 Q943.4063,471.0625 942.9531,471.6875 Q942.5,472.3125 942.5,473.1719 L942.5,474.0938 Q942.5,475.125 943.3438,475.8125 Q944.1875,476.5 945.6875,476.5 Q946.5781,476.5 947.2031,476.2969 Q947.5625,476.1875 947.9688,475.8281 Q948.2344,475.625 948.375,475.5625 Q948.5156,475.5 948.6875,475.5 Q949.0156,475.5 949.25,475.7656 Q949.5,476.0156 949.5,476.375 Q949.5,476.7188 949.1563,477.125 Q948.6563,477.7188 947.8594,478.0469 Q946.8125,478.5 945.5313,478.5 Q944.0313,478.5 942.8281,477.9063 Q941.8594,477.4375 941.1719,476.4219 Q940.5,475.4063 940.5,474.2031 L940.5,473.1094 Q940.5,471.8594 941.0938,470.7656 Q941.7031,469.6719 942.75,469.0938 Q943.8125,468.5 945,468.5 Q945.7188,468.5 946.3438,468.75 Q946.9688,469 947.5,469.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="959.5"
+              y="477.9102">FreeTextQuestion
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="931.5" x2="1058.5" y1="489" y2="489"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="931.5" x2="1058.5" y1="497" y2="497"/><!--MD5=[e222d50f0afaa25b488f3a2d5344f3d7]
+class CustomerFeedbackForm.MultipleChoiceQuestions-->
+        <rect codeLine="31" fill="#FEFECE" height="48" id="CustomerFeedbackForm.MultipleChoiceQuestions"
+              style="stroke:#A80036;stroke-width:1.5;" width="170" x="449" y="349"/>
+        <ellipse cx="464" cy="365" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M466,361.5 Q466.2031,361 466.4375,360.75 Q466.6719,360.5 466.9375,360.5 Q467.4063,360.5 467.7031,360.7813 Q468,361.0625 468,361.7188 L468,363.2813 Q468,363.9375 467.7188,364.2188 Q467.4375,364.5 467,364.5 Q466.6094,364.5 466.3594,364.3281 Q466.1094,364.1563 466,363.7031 Q465.9531,363.3906 465.7813,363.2188 Q465.4688,362.8906 464.9063,362.7031 Q464.3438,362.5 463.7813,362.5 Q463.0781,362.5 462.4844,362.7813 Q461.9063,363.0625 461.4531,363.6875 Q461,364.3125 461,365.1719 L461,366.0938 Q461,367.125 461.8438,367.8125 Q462.6875,368.5 464.1875,368.5 Q465.0781,368.5 465.7031,368.2969 Q466.0625,368.1875 466.4688,367.8281 Q466.7344,367.625 466.875,367.5625 Q467.0156,367.5 467.1875,367.5 Q467.5156,367.5 467.75,367.7656 Q468,368.0156 468,368.375 Q468,368.7188 467.6563,369.125 Q467.1563,369.7188 466.3594,370.0469 Q465.3125,370.5 464.0313,370.5 Q462.5313,370.5 461.3281,369.9063 Q460.3594,369.4375 459.6719,368.4219 Q459,367.4063 459,366.2031 L459,365.1094 Q459,363.8594 459.5938,362.7656 Q460.2031,361.6719 461.25,361.0938 Q462.3125,360.5 463.5,360.5 Q464.2188,360.5 464.8438,360.75 Q465.4688,361 466,361.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="138" x="478"
+              y="369.9102">MultipleChoiceQuestions
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="450" x2="618" y1="381" y2="381"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="450" x2="618" y1="389" y2="389"/><!--MD5=[e7e54fd113fdce6354e730f53f15c084]
+class CustomerFeedbackForm.MultipleChoiceQuestion-->
+        <rect codeLine="36" fill="#FEFECE" height="48" id="CustomerFeedbackForm.MultipleChoiceQuestion"
+              style="stroke:#A80036;stroke-width:1.5;" width="163" x="307.5" y="457"/>
+        <ellipse cx="322.5" cy="473" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M324.5,469.5 Q324.7031,469 324.9375,468.75 Q325.1719,468.5 325.4375,468.5 Q325.9063,468.5 326.2031,468.7813 Q326.5,469.0625 326.5,469.7188 L326.5,471.2813 Q326.5,471.9375 326.2188,472.2188 Q325.9375,472.5 325.5,472.5 Q325.1094,472.5 324.8594,472.3281 Q324.6094,472.1563 324.5,471.7031 Q324.4531,471.3906 324.2813,471.2188 Q323.9688,470.8906 323.4063,470.7031 Q322.8438,470.5 322.2813,470.5 Q321.5781,470.5 320.9844,470.7813 Q320.4063,471.0625 319.9531,471.6875 Q319.5,472.3125 319.5,473.1719 L319.5,474.0938 Q319.5,475.125 320.3438,475.8125 Q321.1875,476.5 322.6875,476.5 Q323.5781,476.5 324.2031,476.2969 Q324.5625,476.1875 324.9688,475.8281 Q325.2344,475.625 325.375,475.5625 Q325.5156,475.5 325.6875,475.5 Q326.0156,475.5 326.25,475.7656 Q326.5,476.0156 326.5,476.375 Q326.5,476.7188 326.1563,477.125 Q325.6563,477.7188 324.8594,478.0469 Q323.8125,478.5 322.5313,478.5 Q321.0313,478.5 319.8281,477.9063 Q318.8594,477.4375 318.1719,476.4219 Q317.5,475.4063 317.5,474.2031 L317.5,473.1094 Q317.5,471.8594 318.0938,470.7656 Q318.7031,469.6719 319.75,469.0938 Q320.8125,468.5 322,468.5 Q322.7188,468.5 323.3438,468.75 Q323.9688,469 324.5,469.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="336.5"
+              y="477.9102">MultipleChoiceQuestion
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="308.5" x2="469.5" y1="489" y2="489"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="308.5" x2="469.5" y1="497" y2="497"/><!--MD5=[3bc02548bac29d23b71faacdaf9c4090]
+class CustomerFeedbackForm.RadioQuestion-->
+        <rect codeLine="43" fill="#FEFECE" height="48" id="CustomerFeedbackForm.RadioQuestion"
+              style="stroke:#A80036;stroke-width:1.5;" width="115" x="595.5" y="457"/>
+        <ellipse cx="610.5" cy="473" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M612.5,469.5 Q612.7031,469 612.9375,468.75 Q613.1719,468.5 613.4375,468.5 Q613.9063,468.5 614.2031,468.7813 Q614.5,469.0625 614.5,469.7188 L614.5,471.2813 Q614.5,471.9375 614.2188,472.2188 Q613.9375,472.5 613.5,472.5 Q613.1094,472.5 612.8594,472.3281 Q612.6094,472.1563 612.5,471.7031 Q612.4531,471.3906 612.2813,471.2188 Q611.9688,470.8906 611.4063,470.7031 Q610.8438,470.5 610.2813,470.5 Q609.5781,470.5 608.9844,470.7813 Q608.4063,471.0625 607.9531,471.6875 Q607.5,472.3125 607.5,473.1719 L607.5,474.0938 Q607.5,475.125 608.3438,475.8125 Q609.1875,476.5 610.6875,476.5 Q611.5781,476.5 612.2031,476.2969 Q612.5625,476.1875 612.9688,475.8281 Q613.2344,475.625 613.375,475.5625 Q613.5156,475.5 613.6875,475.5 Q614.0156,475.5 614.25,475.7656 Q614.5,476.0156 614.5,476.375 Q614.5,476.7188 614.1563,477.125 Q613.6563,477.7188 612.8594,478.0469 Q611.8125,478.5 610.5313,478.5 Q609.0313,478.5 607.8281,477.9063 Q606.8594,477.4375 606.1719,476.4219 Q605.5,475.4063 605.5,474.2031 L605.5,473.1094 Q605.5,471.8594 606.0938,470.7656 Q606.7031,469.6719 607.75,469.0938 Q608.8125,468.5 610,468.5 Q610.7188,468.5 611.3438,468.75 Q611.9688,469 612.5,469.5 Z "
+              fill="#000000"/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="83" x="624.5"
+              y="477.9102">RadioQuestion
+        </text>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="596.5" x2="709.5" y1="489" y2="489"/>
+        <line style="stroke:#A80036;stroke-width:1.5;" x1="596.5" x2="709.5" y1="497" y2="497"/>
+        <path d="M953,144 L953,170.3516 A0,0 0 0 0 953,170.3516 L1005.15,170.3516 L1015.81,240.83 L1013.15,170.3516 L1063,170.3516 A0,0 0 0 0 1063,170.3516 L1063,154 L1053,144 L953,144 A0,0 0 0 0 953,144 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M1053,144 L1053,154 L1063,154 L1053,144 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="959"
+              y="162.4951">Always present
+        </text>
+        <path d="M503.5,144 L503.5,170.3516 A0,0 0 0 0 503.5,170.3516 L583,170.3516 L587,240.83 L591,170.3516 L670.5,170.3516 A0,0 0 0 0 670.5,170.3516 L670.5,154 L660.5,144 L503.5,144 A0,0 0 0 0 503.5,144 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M660.5,144 L660.5,154 L670.5,154 L660.5,144 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="509.5"
+              y="162.4951">Present in case of survey
+        </text>
+        <path d="M656,252 L656,278.3516 A0,0 0 0 0 656,278.3516 L773.22,278.3516 L941.22,348.83 L781.22,278.3516 L842,278.3516 A0,0 0 0 0 842,278.3516 L842,262 L832,252 L656,252 A0,0 0 0 0 656,252 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M832,252 L832,262 L842,262 L832,252 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="662"
+              y="270.4951">Props: List of TextQuestions
+        </text>
+        <path d="M272,252 L272,278.3516 A0,0 0 0 0 272,278.3516 L406.95,278.3516 L503.61,348.83 L414.95,278.3516 L518,278.3516 A0,0 0 0 0 518,278.3516 L518,262 L508,252 L272,252 A0,0 0 0 0 272,252 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M508,252 L508,262 L518,262 L508,252 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="278"
+              y="270.4951">Props: List of MultipleChoiceQuestions
+        </text>
+        <path d="M654,351.5 L654,394.2031 A0,0 0 0 0 654,394.2031 L745.58,394.2031 L679.28,456.78 L753.58,394.2031 L892,394.2031 A0,0 0 0 0 892,394.2031 L892,361.5 L882,351.5 L654,351.5 A0,0 0 0 0 654,351.5 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M882,351.5 L882,361.5 L892,361.5 L882,351.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="660"
+              y="369.9951">Props: MultipleChoiceQuestion
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="217" x="660"
+              y="386.3467">Renders when 'allowedSelections==1'
+        </text>
+        <path d="M184,351.5 L184,394.2031 A0,0 0 0 0 184,394.2031 L312.57,394.2031 L369.29,456.78 L320.57,394.2031 L414,394.2031 A0,0 0 0 0 414,394.2031 L414,361.5 L404,351.5 L184,351.5 A0,0 0 0 0 184,351.5 "
+              fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M404,351.5 L404,361.5 L414,361.5 L404,351.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="190"
+              y="369.9951">Props: MultipleChoiceQuestion
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209" x="190"
+              y="386.3467">Renders when 'allowedSelections&gt;1'
+        </text>
+        <path d="M6,6 L6,65.0547 L314,65.0547 L314,16 L304,6 L6,6 " fill="#FBFB77"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <path d="M304,6 L304,16 L314,16 L304,6 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="287" x="12"
+              y="24.4951">Use composition of function React.js components
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="218" x="12"
+              y="40.8467">Load/create UI via async get requests
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="12"
+              y="57.1982">Submit with Post/Put requests
+        </text><!--MD5=[a62d1f581056787107c88457b99e1f01]
+reverse link CustomerFeedbackForm.CustomerResponse to CustomerFeedbackForm.Rating-->
+        <path codeLine="46" d="M893.95,187.99 C922.61,205.56 958.1,227.3 983.76,243.02 " fill="none"
+              id="CustomerFeedbackForm.CustomerResponse-backto-CustomerFeedbackForm.Rating"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="882.54,181,885.5691,187.544,892.7748,187.2649,889.7457,180.7208,882.54,181"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[724f362be103ea616a25e5ab84fecb7e]
+reverse link CustomerFeedbackForm.CustomerResponse to CustomerFeedbackForm.Survey-->
+        <path codeLine="47"
+              d="M773.92,185.96 C734.11,201.79 683.65,222.14 639,241 C633.18,243.46 627.02,246.13 621.05,248.74 "
+              fill="none" id="CustomerFeedbackForm.CustomerResponse-backto-CustomerFeedbackForm.Survey"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036"
+                 points="786.18,181.09,779.1272,179.5872,775.0274,185.5194,782.0802,187.0222,786.18,181.09"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c16f374840164bb02a28adaf46c1007b]
+reverse link CustomerFeedbackForm.CustomerResponse to CustomerFeedbackForm.Submit-->
+        <path codeLine="48" d="M866.82,192.01 C877.01,207.89 888.88,226.41 898.04,240.68 " fill="none"
+              id="CustomerFeedbackForm.CustomerResponse-backto-CustomerFeedbackForm.Submit"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="859.75,181,859.6203,188.2099,866.2258,191.1027,866.3554,183.8928,859.75,181"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c029b6cbaaab45cbbe00f145d15a9b3a]
+reverse link CustomerFeedbackForm.Survey to CustomerFeedbackForm.FreeTextQuestions-->
+        <path codeLine="49"
+              d="M633.4,287.06 C635.28,287.74 637.15,288.39 639,289 C756.21,327.47 790.21,319.55 910,349 C915.49,350.35 921.17,351.79 926.87,353.27 "
+              fill="none" id="CustomerFeedbackForm.Survey-backto-CustomerFeedbackForm.FreeTextQuestions"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="621.03,282.2,625.1504,288.118,632.1979,286.5907,628.0775,280.6727,621.03,282.2"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cfcdce9e6aecad81472095c21b71e7a2]
+reverse link CustomerFeedbackForm.FreeTextQuestions to CustomerFeedbackForm.FreeTextQuestion-->
+        <path codeLine="50" d="M995,410.34 C995,425.68 995,443.1 995,456.68 " fill="none"
+              id="CustomerFeedbackForm.FreeTextQuestions-backto-CustomerFeedbackForm.FreeTextQuestion"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="995,397,991,403,995,409,999,403,995,397"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fc0ce2975ae09bdb20cc5ca8f485c2b8]
+reverse link CustomerFeedbackForm.Survey to CustomerFeedbackForm.MultipleChoiceQuestions-->
+        <path codeLine="51" d="M569.53,300.94 C561.69,316.61 552.66,334.68 545.66,348.68 " fill="none"
+              id="CustomerFeedbackForm.Survey-backto-CustomerFeedbackForm.MultipleChoiceQuestions"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="575.5,289,569.239,292.5777,570.1334,299.7331,576.3944,296.1554,575.5,289"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ae9321d8615388e4d991096c6a51c0f2]
+reverse link CustomerFeedbackForm.MultipleChoiceQuestions to CustomerFeedbackForm.MultipleChoiceQuestion-->
+        <path codeLine="52" d="M491.82,404.83 C469.1,421.45 441.52,441.6 420.65,456.86 " fill="none"
+              id="CustomerFeedbackForm.MultipleChoiceQuestions-backto-CustomerFeedbackForm.MultipleChoiceQuestion"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="502.54,397,495.3356,397.3098,492.8506,404.0792,500.055,403.7694,502.54,397"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[78102282f0710f7e1deea0f66cc559f2]
+reverse link CustomerFeedbackForm.MultipleChoiceQuestions to CustomerFeedbackForm.RadioQuestion-->
+        <path codeLine="54" d="M569.6,405.71 C587.98,422.09 610.02,441.71 626.82,456.68 " fill="none"
+              id="CustomerFeedbackForm.MultipleChoiceQuestions-backto-CustomerFeedbackForm.RadioQuestion"
+              style="stroke:#A80036;stroke-width:1.0;"/>
+        <polygon fill="#A80036" points="559.82,397,561.6387,403.978,568.7794,404.983,566.9607,398.005,559.82,397"
+                 style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e5788e85cd1ab6b82ed5c4a39c3755df]
+link CustomerFeedbackFormNote to CustomerFeedbackForm-->
+        <path codeLine="78"
+              d="M160,65.12 C160,69.4013 160,73.9783 160,78.7167 C160,81.0859 160,83.4954 160,85.9285 C160,86.5368 160,87.1465 160,87.7575 C160,88.0629 160,88.3687 160,88.6748 "
+              fill="none" id="CustomerFeedbackFormNote-CustomerFeedbackForm"
+              style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[efba01f897d90ae045e192357e50384d]
+@startuml
+skinparam Shadowing false
+skinparam componentStyle rectangle
+namespace CustomerFeedbackForm #DDDDDD {
+class  CustomerResponse {
+
+
+}
+
+class  Rating {
+
+}
+class Submit {
+
+}
+class  Survey {
+
+}
+
+
+class  FreeTextQuestions {
+
+}
+
+
+class  FreeTextQuestion {
+
+}
+
+
+
+class  MultipleChoiceQuestions {
+
+}
+
+
+class  MultipleChoiceQuestion {
+
+}
+
+
+
+
+class  RadioQuestion {
+
+}
+CustomerResponse *- - Rating
+CustomerResponse *- - Survey
+CustomerResponse *- - Submit
+Survey *- - FreeTextQuestions
+FreeTextQuestions  *- -  FreeTextQuestion
+Survey *- - MultipleChoiceQuestions
+MultipleChoiceQuestions *- - MultipleChoiceQuestion
+
+MultipleChoiceQuestions *- - RadioQuestion
+
+note "Always present" as RatingNote
+RatingNote .. Rating
+
+note "Present in case of survey" as SurveyNote
+SurveyNote .. Survey
+
+note "Props: List of TextQuestions" as FreeTextQuestionsNote
+FreeTextQuestionsNote .. FreeTextQuestions
+
+
+note "Props: List of MultipleChoiceQuestions" as MultipleChoiceQuestionsNote
+MultipleChoiceQuestionsNote .. MultipleChoiceQuestions
+
+
+note "Props: MultipleChoiceQuestion\nRenders when 'allowedSelections==1'" as SingleChoiceQuestionNote
+SingleChoiceQuestionNote .. RadioQuestion
+
+
+note "Props: MultipleChoiceQuestion\nRenders when 'allowedSelections>1'" as MultipleChoiceQuestionNote
+MultipleChoiceQuestionNote .. MultipleChoiceQuestion
+}
+note "Use composition of function React.js components\nLoad/create UI via async get requests\nSubmit with Post/Put requests" as CustomerFeedbackFormNote
+CustomerFeedbackFormNote .. CustomerFeedbackForm
+@enduml
+
+PlantUML version 1.2021.5(Sun Apr 25 14:20:28 EEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: Cp1253
+Language: en
+Country: US
+-->
+    </g>
+</svg>
