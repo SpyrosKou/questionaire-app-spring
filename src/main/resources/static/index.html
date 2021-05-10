@@ -11,7 +11,80 @@
 </head>
 <body>
 <div id="root"></div>
-<script src="react.js" type="text/babel"></script>
+<div id="freeTextQuestion"></div>
+<script type="text/babel">
+
+    function FreeTextQuestion(props) {
+        return (
+            <div>
+                <label>{props.question}</label>
+                <input type="textarea" onChange={props.handleChangeResponse}/>
+
+                <label>Other</label>
+                <input type="textarea" onChange={props.handleChangeOther}/>
+            </div>
+        );
+
+    }
+
+    function RadioQuestion(props) {choiceQuestionOptions
+        return (
+            <div>
+                <label>{props.question}</label>
+                <form>
+                    <input type="radio" value="male" id="male"
+                           onChange={this.handleChange} name="gender"/> <label htmlFor="male">Male</label>
+
+                    <input type="radio" value="female" id="female"
+                           onChange={this.handleChange} name="gender"/> <label htmlFor="female">Female</label>
+                </form>
+
+                <input type="textarea" onChange={props.handleChangeOther}/>
+                <label>Other</label>
+                <input type="textarea" onChange={props.handleChangeOther}/>
+            </div>
+        );
+
+    }
+
+    function MultipleChoiceQuestion(props) {
+        return (
+            <div>
+                <label>{props.question}</label>
+                <input type="textarea" onChange={props.handleChangeResponse}/>
+
+                <label>Other</label>
+                <input type="textarea" onChange={props.handleChangeOther}/>
+            </div>
+        );
+
+    }
+
+    function handleChangeResponse(event)
+    {
+        console.log(event.target.value);
+        this.state.response = event.target.value;
+        console.log(this.state.response);
+    }
+
+    function handleChangeOther(event)
+    {
+        console.log(event.target.value);
+        this.state.other = event.target.value;
+        console.log(this.state.other);
+    }
+
+
+
+    ReactDOM.render(
+        <h1>Survey!</h1>,
+        document.getElementById('root')
+    );
+
+    ReactDOM.render(<FreeTextQuestion handleChangeResponse={handleChangeResponse} handleChangeOther={handleChangeOther} />, document.getElementById('freeTextQuestion'));
+
+
+</script>
 <!--
   Note: this page is a great way to try React but it's not suitable for production.
   It slowly compiles JSX with Babel in the browser and uses a large development build of React.
